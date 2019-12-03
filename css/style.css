@@ -96,7 +96,7 @@ header .logo{
 	font-weight: bold;
 	color: #ffffff;
 
-	padding-top: 20vh;
+	padding-top: 13vh;
 }
 
 .container2 i{
@@ -480,15 +480,23 @@ header .logo{
 	.container3 h2{
 		padding-top: 55px;
 	}
+	.container4 .item p {
+		padding-bottom: 30px;
+	}
 	.container4 .item{
 		display: block;
-		width:50%;
+		/* width: 50%; */
+		width: 100%;
 		margin: 1.45% auto;
+		min-height: 200px;
+	}
+	.container4 .item .quad {
+	    margin: 35px auto 0 auto;
 	}
 	.container4 .item:last-child{
 		margin: 1.45% auto;
 	}
-
+	
 	.container5{
 		padding-bottom: 50px;
 	}
@@ -498,6 +506,22 @@ header .logo{
 	.container5 .gallery{
 		margin-top: 40px;
 	}
+
+	
+	/* .container5 .item_img {
+		width: 100%;
+		height: 100%;
+		margin: 1.45% 0;
+		min-width: none;
+		max-width: none;
+		min-height: none;
+		max-height: none;
+	}
+
+	.container5 .item_img img {
+		width: 100%;
+	} */
+
 	.container6{
 		min-height: 650px;
 	}
@@ -509,6 +533,12 @@ header .logo{
 		padding-top: 45px;
 	}
 	
+	.container6 form input.main, .container6 form textarea.main {
+		width: 100%;		
+		margin-left: -5.5%;
+		padding-left: 5%;
+    	padding-right: 5%;
+	}
 }
 
 @media(max-width: 592px){
@@ -521,27 +551,38 @@ header .logo{
 	.container3 h2{
 		padding-top: 30px;
 	}
-	.container6 form input.main, .container6 form textarea.main, .container6 form .check_sub{
+	/* .container6 form input.main, .container6 form textarea.main, .container6 form .check_sub{
 		margin-left: 0;
-	}
+	} */
 }
 
 @media(max-width: 425px){
+	.container5{
+		padding-bottom: 0;
+	}
+
 	.container5 .gallery .item_img{
 		min-width: 280px;
 	}
-
-	.container5{
-		padding-bottom: 0;
+	.container5 .gallery .item_img .hover_cart{
+		height: 202.219px;
+		margin-top: -15px;
+		top: -189px;
+	}
+	.container5 .item_img .hover_cart .search {
+		margin-top: 80px;
+	}
+	.container5 .item_img .hover_cart .link {
+		margin-top: 80px;
 	}
 
 	.container6 {
 		min-height: 625px;
 	}
 
-	.container6 form input.main, .container6 form textarea.main{
+	/* .container6 form input.main, .container6 form textarea.main{
 		width: 85%;
-	}
+	} */
 
 	.container6 form{
 		text-align: center;
@@ -607,3 +648,15 @@ header .logo{
 	}	
 }
 
+@media (max-width: 320px){
+	.container5 .item_img {
+		margin: 0;
+	}
+}
+
+
+@media(max-height: 1200px){
+	.container2 h1 {
+		padding-top: 20vh;
+	}
+}
